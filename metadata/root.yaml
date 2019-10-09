@@ -1,0 +1,32 @@
+wallarm-ingress:
+  display_name: Wallarm Ingress
+  description: Wallarm is a DevOps-friendly Web Application Firewall (WAF) uniquely suited to protect your cloud applications and APIs.
+  logo: wallarm-ingress/wallarm.png
+  category: security
+  overview: wallarm-ingress/overview.md
+  resources:
+    provider:
+      title: Wallarm
+      link: https://wallarm.com/
+    links:
+      - type: resources
+        title: wallarm ingress controller
+        link: https://docs.wallarm.com/en/admin-en/installation-kubernetes-en.html
+      - type: resources
+        title: wallarm ingress controller configuration options
+        link: https://github.com/wallarm/ingress-chart/tree/master/wallarm-ingress#configuration
+      - type: release_notes
+        title: v2.12
+        link: https://docs.wallarm.com/en/release-notes-en/relnotes-en_v2.12.html
+      - type: release_notes
+        title: v2.10
+        link: https://docs.wallarm.com/en/release-notes-en/relnotes-en_v2.10.html
+      - type: release_notes
+        title: v2.8
+        link: https://docs.wallarm.com/en/release-notes-en/relnotes-en_v2.8.html
+      - type: license
+        title: Terms of Service
+        link: https://wallarm.com/terms-of-services
+      - type: support
+        title: Support
+        link: ""

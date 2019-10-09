@@ -1,0 +1,25 @@
+apiVersion: kubeaddons.mesosphere.io/v1alpha1
+kind: Addon
+metadata:
+  name: wallarm-ingress
+  namespace: kubeaddons
+  labels:
+    kubeaddons.mesosphere.io/name: wallarm-ingress
+  annotations:
+    appversion.kubeaddons.mesosphere.io/wallarm-ingress: 1.3.0
+    values.chart.helm.kubeaddons.mesosphere.io/wallarm-ingress: "https://raw.githubusercontent.com/wallarm/ingress-chart/v1.4.0/wallarm-ingress/values.yaml"
+spec:
+  namespace: wallarm-ingress
+  kubernetes:
+    minSupportedVersion: v1.15.3
+  cloudProvider:
+    - name: aws
+      enabled: true
+    - name: none
+      enabled: true
+    - name: docker
+      enabled: true
+  chartReference:
+    repo: https://repo.wallarm.com/charts/stable
+    chart: wallarm/wallarm-ingress
+    version: 1.4.0
