@@ -1,0 +1,25 @@
+apiVersion: kubeaddons.mesosphere.io/v1alpha1
+kind: Addon
+metadata:
+  name: couchbase-operator
+  namespace: kubeaddons
+  labels:
+    kubeaddons.mesosphere.io/name: couchbase-operator
+  annotations:
+    appversion.kubeaddons.mesosphere.io/couchbase-operator: 1.2  
+    values.chart.helm.kubeaddons.mesosphere.io/couchbase-operator: "https://raw.githubusercontent.com/couchbase-partners/helm-charts/master/couchbase-operator/values.yaml"
+spec:
+  namespace: couchbase-operator
+  kubernetes:
+    minSupportedVersion: v1.15.3
+  cloudProvider:
+    - name: aws
+      enabled: true
+    - name: none
+      enabled: true
+    - name: docker
+      enabled: true
+  chartReference:
+    repo: https://couchbase-partners.github.io/helm-charts
+    chart: couchbase/couchbase-operator
+    version: 0.1.2
