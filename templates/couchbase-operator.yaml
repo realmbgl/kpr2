@@ -6,7 +6,7 @@ metadata:
   labels:
     kubeaddons.mesosphere.io/name: couchbase-operator
   annotations:
-    appversion.kubeaddons.mesosphere.io/couchbase-operator: 1.2  
+    appversion.kubeaddons.mesosphere.io/couchbase-operator: "1.2"  
     values.chart.helm.kubeaddons.mesosphere.io/couchbase-operator: "https://raw.githubusercontent.com/couchbase-partners/helm-charts/master/couchbase-operator/values.yaml"
 spec:
   namespace: couchbase-operator
