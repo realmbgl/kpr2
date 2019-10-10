@@ -52,12 +52,12 @@ couchbase-operator:
         link: https://docs.couchbase.com/server/current/introduction/intro.html
       - type: resources
         title: couchbase server sdk's
-        link: https://docs.couchbase.com/server/current/sdk/overview.html               
+        link: https://docs.couchbase.com/server/current/sdk/overview.html
       - type: release_notes
-        title: couchbase autonomous operator release notes
+        title: couchbase autonomous operator
         link: https://docs.couchbase.com/operator/current/release-notes.html
       - type: release_notes
-        title: couchbase server release notes
+        title: couchbase server
         link: https://docs.couchbase.com/server/current/release-notes/relnotes.html
       - type: license
         title: couchbase license
