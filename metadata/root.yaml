@@ -35,7 +35,42 @@ couchbase-operator:
   description: A Helm chart to deploy the Couchbase Autonomous Operator for easily deploying, managing, and maintaining Couchbase Clusters.
   overview: couchbase-operator/overview.md
   logo: couchbase-operator/couchbase.png
-  category: workload
+  category: operator
+  resources:
+    provider:
+      title: Couchbase
+      link: https://www.couchbase.com/
+    links:
+      - type: resources
+        title: couchbase autonomous operator
+        link: https://docs.couchbase.com/operator/current/overview.html
+      - type: resources
+        title: couchbase autonomous operator - helm
+        link: https://docs.couchbase.com/operator/current/helm-setup-guide.html
+      - type: resources
+        title: couchbase server
+        link: https://docs.couchbase.com/server/current/introduction/intro.html
+      - type: resources
+        title: couchbase server sdk's
+        link: https://docs.couchbase.com/server/current/sdk/overview.html
+      - type: release_notes
+        title: couchbase autonomous operator
+        link: https://docs.couchbase.com/operator/current/release-notes.html
+      - type: release_notes
+        title: couchbase server
+        link: https://docs.couchbase.com/server/current/release-notes/relnotes.html
+      - type: license
+        title: couchbase license
+        link: https://www.couchbase.com/legal/agreements#ProductLicenses
+      - type: support
+        title: Support
+        link: ""
+couchbase-cluster:
+  display_name: Couchbase Cluster
+  description: Couchbase Server is a NoSQL document database with a distributed architecture for performance, scalability, and availability. It enables developers to build applications easier and faster by leveraging the power of SQL with the flexibility of JSON.
+  overview: couchbase-cluster/overview.md
+  logo: couchbase-cluster/couchbase.png
+  category: database
   resources:
     provider:
       title: Couchbase

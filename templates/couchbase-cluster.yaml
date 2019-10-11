@@ -1,0 +1,25 @@
+apiVersion: kubeaddons.mesosphere.io/v1alpha1
+kind: Addon
+metadata:
+  name: couchbase-cluster
+  namespace: kubeaddons
+  labels:
+    kubeaddons.mesosphere.io/name: couchbase-cluster
+  annotations:
+    appversion.kubeaddons.mesosphere.io/couchbase-cluster: "1.2"  
+    values.chart.helm.kubeaddons.mesosphere.io/couchbase-cluster: "https://raw.githubusercontent.com/couchbase-partners/helm-charts/master/couchbase-cluster/values.yaml"
+spec:
+  namespace: couchbase-cluster
+  kubernetes:
+    minSupportedVersion: v1.15.3
+  cloudProvider:
+    - name: aws
+      enabled: true
+    - name: none
+      enabled: true
+    - name: docker
+      enabled: true
+  chartReference:
+    repo: https://couchbase-partners.github.io/helm-charts
+    chart: couchbase/couchbase-cluster
+    version: 0.1.2
