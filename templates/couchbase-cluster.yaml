@@ -9,7 +9,6 @@ metadata:
     appversion.kubeaddons.mesosphere.io/couchbase-cluster: "1.2"
     values.chart.helm.kubeaddons.mesosphere.io/couchbase-cluster: "https://raw.githubusercontent.com/couchbase-partners/helm-charts/master/couchbase-cluster/values.yaml"
 spec:
-  namespace: couchbase-cluster
   kubernetes:
     minSupportedVersion: v1.15.3
   cloudProvider:

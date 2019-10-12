@@ -9,7 +9,6 @@ metadata:
     appversion.kubeaddons.mesosphere.io/couchbase-operator: "1.2"
     values.chart.helm.kubeaddons.mesosphere.io/couchbase-operator: "https://raw.githubusercontent.com/couchbase-partners/helm-charts/master/couchbase-operator/values.yaml"
 spec:
-  namespace: couchbase-operator
   kubernetes:
     minSupportedVersion: v1.15.3
   cloudProvider:

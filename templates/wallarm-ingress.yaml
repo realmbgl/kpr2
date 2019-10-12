@@ -9,7 +9,6 @@ metadata:
     appversion.kubeaddons.mesosphere.io/wallarm-ingress: 1.3.0
     values.chart.helm.kubeaddons.mesosphere.io/wallarm-ingress: "https://raw.githubusercontent.com/wallarm/ingress-chart/v1.4.0/wallarm-ingress/values.yaml"
 spec:
-  namespace: wallarm-ingress
   kubernetes:
     minSupportedVersion: v1.15.3
   cloudProvider:
@@ -21,5 +20,5 @@ spec:
       enabled: true
   chartReference:
     repo: https://repo.wallarm.com/charts/stable
-    chart: wallarm/wallarm-ingress
+    chart: wallarm-ingress
     version: 1.4.0
