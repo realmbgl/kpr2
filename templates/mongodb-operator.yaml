@@ -6,7 +6,7 @@ metadata:
   labels:
     kubeaddons.mesosphere.io/name: mongodb-operator
   annotations:
-    appversion.kubeaddons.mesosphere.io/mongodb-operator: 1.2.4    
+    appversion.kubeaddons.mesosphere.io/mongodb-operator: 1.2.4
     values.chart.helm.kubeaddons.mesosphere.io/mongodb-operator: "https://raw.githubusercontent.com/mongodb/mongodb-enterprise-kubernetes/1.2.4/helm_chart/values.yaml"
 spec:
   kubernetes:
@@ -19,6 +19,6 @@ spec:
     - name: docker
       enabled: true
   chartReference:
-    repo: https://github.com/mongodb/mongodb-enterprise-kubernetes/archive/1.2.4.tar.gz
-    chart: helm_chart
+    repo: https://mbgl-bucket.s3-us-west-1.amazonaws.com/helm/index.yaml
+    chart: mongodb-enterprise-operator
     version: 1.2.4
