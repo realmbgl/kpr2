@@ -1,0 +1,24 @@
+apiVersion: kubeaddons.mesosphere.io/v1alpha1
+kind: Addon
+metadata:
+  name: mongodb-operator
+  namespace: kubeaddons
+  labels:
+    kubeaddons.mesosphere.io/name: mongodb-operator
+  annotations:
+    appversion.kubeaddons.mesosphere.io/couchbase-operator: 1.2.4    
+    values.chart.helm.kubeaddons.mesosphere.io/mongodb-operator: "https://raw.githubusercontent.com/mongodb/mongodb-enterprise-kubernetes/1.2.4/helm_chart/values.yaml"
+spec:
+  kubernetes:
+    minSupportedVersion: v1.15.3
+  cloudProvider:
+    - name: aws
+      enabled: true
+    - name: none
+      enabled: true
+    - name: docker
+      enabled: true
+  chartReference:
+    repo: https://github.com/mongodb/mongodb-enterprise-kubernetes/archive/1.2.4.tar.gz
+    chart: helm_chart
+    version: 1.2.4

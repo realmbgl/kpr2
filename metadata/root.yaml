@@ -100,3 +100,44 @@ couchbase-cluster:
       - type: support
         title: Support
         link: ""
+mongodb-operator:
+  display_name: MongoDB Operator
+  description: MongoDB Kubernetes Enterprise Operator
+  overview: mongodb-operator/overview.md
+  logo: mongodb-operator/mongodb.png
+  category: operator
+  resources:
+    provider:
+      title: MongoDB
+      link: https://www.mongodb.com/
+    links:
+      - type: resources
+        title: mongodb operator
+        link: https://docs.mongodb.com/kubernetes-operator/master/tutorial/install-k8s-operator/
+      - type: resources
+        title: mongodb ops manager simple install
+        link: https://docs.opsmanager.mongodb.com/current/tutorial/install-simple-test-deployment/
+      - type: resources
+        title: mongodb ops manager production install
+        link: https://docs.opsmanager.mongodb.com/current/installation/
+      - type: resources
+        title: mongodb
+        link: https://docs.mongodb.com/
+      - type: resources
+        title: mongodb shell
+        link: https://docs.mongodb.com/manual/mongo/
+      - type: resources
+        title: mongodb compass - explore and manipulate your data
+        link: https://www.mongodb.com/products/compass
+      - type: release_notes
+        title: mongo db operator release notes
+        link: https://docs.mongodb.com/kubernetes-operator/master/release-notes/
+      - type: release_notes
+        title: mongo db release notes
+        link: https://docs.mongodb.com/manual/release-notes/4.0/
+      - type: license
+        title: mongodb licensing
+        link: https://www.mongodb.com/community/licensing
+      - type: support
+        title: mongodb support
+        link: https://support.mongodb.com/welcome
