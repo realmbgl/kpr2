@@ -6,7 +6,7 @@ metadata:
   labels:
     kubeaddons.mesosphere.io/name: mongodb-operator
   annotations:
-    appversion.kubeaddons.mesosphere.io/couchbase-operator: 1.2.4    
+    appversion.kubeaddons.mesosphere.io/mongodb-operator: 1.2.4    
     values.chart.helm.kubeaddons.mesosphere.io/mongodb-operator: "https://raw.githubusercontent.com/mongodb/mongodb-enterprise-kubernetes/1.2.4/helm_chart/values.yaml"
 spec:
   kubernetes:
