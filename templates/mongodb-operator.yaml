@@ -19,6 +19,6 @@ spec:
     - name: docker
       enabled: true
   chartReference:
-    repo: https://mbgl-bucket.s3-us-west-1.amazonaws.com/helm/index.yaml
+    repo: https://mbgl-bucket.s3-us-west-1.amazonaws.com/helm
     chart: mongodb-enterprise-operator
     version: 1.2.4
