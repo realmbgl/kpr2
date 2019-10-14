@@ -2,7 +2,7 @@ wallarm-ingress:
   display_name: Wallarm Ingress
   description: Wallarm is a DevOps-friendly Web Application Firewall (WAF) uniquely suited to protect your cloud applications and APIs.
   overview: wallarm-ingress/overview.md
-  logo: wallarm-ingress/wallarm.png
+  logo: wallarm-ingress/wallarm.svg
   category: security
   resources:
     provider:
